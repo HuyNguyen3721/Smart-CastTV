@@ -1,0 +1,6 @@
+[submodule "base-module"]
+	path = base-module
+	url = https://gitlab.com/ezmedia/base-module.git
+[submodule "ads-module"]
+	path = ads-module
+	url = https://gitlab.com/ezmedia/ads-module.git

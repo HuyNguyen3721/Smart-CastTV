@@ -1,0 +1,5 @@
+rootProject.name = "SmartTVCast"
+include ':app'
+include ':base-module'
+include ':ads-module'
+include ':spotlights'

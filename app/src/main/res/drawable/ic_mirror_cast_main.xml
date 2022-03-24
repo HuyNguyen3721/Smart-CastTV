@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+  <path
+      android:pathData="M20,39C30.4934,39 39,30.4934 39,20C39,9.5066 30.4934,1 20,1C9.5066,1 1,9.5066 1,20C1,30.4934 9.5066,39 20,39Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="1"
+          android:startX="20"
+          android:endY="39"
+          android:endX="20"
+          android:type="linear">
+        <item android:offset="0" android:color="#99DA22FF"/>
+        <item android:offset="1" android:color="#C19733EE"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M28,14V14.24H22.87C19.9,14.24 18.52,15.62 18.52,18.59V23.7H17.75V27.25H18.52V28.75H12.95C12.54,28.75 12.2,28.41 12.2,28C12.2,27.59 12.54,27.25 12.95,27.25H16.25V23.7H14C10.87,23.7 10.03,22.93 10,19.9V14C10,10.8 10.8,10 14,10H24C27.2,10 28,10.8 28,14Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M22,28V18H29V28H22Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M27.15,15.74C27.46,15.74 27.75,15.76 28,15.79C29.48,15.98 30,16.76 30,18.59V27.15C30,29.29 29.29,30 27.15,30H22.87C21.39,30 20.6,29.66 20.25,28.75C20.1,28.36 20.03,27.87 20.02,27.25V18.59C20.02,16.45 20.73,15.74 22.87,15.74H27.15ZM26.58,19.66C26.58,18.79 25.88,18.09 25.01,18.09C24.14,18.09 23.44,18.79 23.44,19.66C23.44,20.53 24.14,21.23 25.01,21.23C25.88,21.23 26.58,20.53 26.58,19.66ZM22.87,25.01C22.87,26.19 23.83,27.15 25.01,27.15C26.19,27.15 27.15,26.19 27.15,25.01C27.15,24.37 26.86,23.79 26.41,23.39C26.04,23.07 25.55,22.87 25.01,22.87C24.32,22.87 23.71,23.2 23.32,23.7C23.04,24.06 22.87,24.52 22.87,25.01ZM23.5,28C23.2239,28 23,28.2239 23,28.5C23,28.7761 23.2239,29 23.5,29H26.5C26.7761,29 27,28.7761 27,28.5C27,28.2239 26.7761,28 26.5,28H23.5Z"
+      android:fillColor="#ffffff"
+      android:fillType="evenOdd"/>
+</vector>

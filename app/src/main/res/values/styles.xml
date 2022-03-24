@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="StyleDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">85%</item>
+        <item name="windowFixedWidthMinor">85%</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+    <style name="StyleDialogDelete" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">82%</item>
+        <item name="windowFixedWidthMinor">82%</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="StyleDialogRouter" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">85%</item>
+        <item name="windowFixedWidthMinor">85%</item>
+        <item name="windowFixedHeightMinor">65%</item>
+        <item name="windowFixedHeightMajor">65%</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+</resources>

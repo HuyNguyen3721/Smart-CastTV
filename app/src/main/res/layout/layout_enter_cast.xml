@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_185sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_cast" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingTop="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            app:srcCompat="@drawable/tv" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_cast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintBottom_toTopOf="@+id/layout_sound"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cast_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/svn_gilroy_bold"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:singleLine="true"
+            android:text="@string/cast_tv"
+            android:textColor="@color/color_002884"
+            android:textSize="@dimen/_13sdp"
+            app:autoSizeMinTextSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_cast"
+            app:layout_constraintStart_toEndOf="@+id/ic_cast"
+            app:layout_constraintTop_toTopOf="@+id/ic_cast"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_cast_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/svn_gilroy_regular"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/cast_to_tv_amp_chromecast_play_video_to_tv"
+            android:textColor="@color/color_002884"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toEndOf="@+id/ic_cast"
+            app:layout_constraintTop_toBottomOf="@+id/ic_cast"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_cast_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/svn_gilroy_bold"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/play_video_to_tv"
+            android:textColor="@color/color_002884"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toEndOf="@+id/ic_cast"
+            app:layout_constraintTop_toBottomOf="@+id/text_cast_1"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_sound"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/ic_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.4">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sounding"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48"
+                app:srcCompat="@drawable/ic_bg_enter_cast" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sounding_second"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:srcCompat="@drawable/ic_bg_enter_cast" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/ic_bg_enter_cast"
+                android:padding="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:srcCompat="@drawable/ic_enter_cast" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

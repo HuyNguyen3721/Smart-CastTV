@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SmartTVCast" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_4D23DBBD</item>
+        <item name="colorSecondaryVariant">@color/color_4D23DBBD</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/color_F5F8FF</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowAnimationStyle">@style/WindowTransition</item>
+        <item name="colorControlHighlight">@color/color_26002884</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="WindowTransition">
+        <item name="android:activityOpenEnterAnimation">@anim/pull_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pull_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_out_right</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_bg</item>
+        <item name="android:textColor">@color/color_222222</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceColor" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/color_222222</item>
+    </style>
+</resources>

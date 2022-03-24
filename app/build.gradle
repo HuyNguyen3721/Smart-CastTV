@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ezstudio.smarttvcast"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation project(path: ':base-module')
+    implementation project(path: ':ads-module')
+    implementation project(path: ':spotlights')
+    /*https://github.com/intuit/sdp*/
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    /*https://insert-koin.io/docs/quickstart/kotlin#setup*/
+    implementation "org.koin:koin-core:2.2.2"
+    implementation "org.koin:koin-android:2.2.2"
+    // Koin AndroidX ViewModel features
+    implementation "org.koin:koin-androidx-viewmodel:2.2.2"
+    // Koin AndroidX Fragment features
+    implementation "org.koin:koin-androidx-fragment:2.2.2"
+    //
+    implementation 'me.grantland:autofittextview:0.2.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    // lottie animation
+    def lottieVersion = "4.2.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    //play-services-cast-framework
+    implementation 'com.google.android.gms:play-services-cast-framework:21.0.0'
+    //mediarouter
+    implementation 'androidx.mediarouter:mediarouter:1.2.5'
+    //verticalseekbar
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:1.0.0'
+    //nano http
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    // room
+    /*https://developer.android.com/jetpack/androidx/releases/room*/
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    /*https://github.com/google/gson*/
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'com.flurry.android:analytics:12.11.0@aar'
+    implementation platform('com.google.firebase:firebase-bom:26.6.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-config:21.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+}

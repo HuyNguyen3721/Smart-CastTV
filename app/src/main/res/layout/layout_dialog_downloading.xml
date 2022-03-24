@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_20sdp"
+    tools:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_dialog_20"
+        android:padding="@dimen/_18sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/svn_silroy_medium"
+            android:text="@string/downloading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"
+            app:srcCompat="@drawable/ic_phone_connected" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dot_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_phone"
+            app:layout_constraintEnd_toStartOf="@+id/ic_tv"
+            app:layout_constraintStart_toEndOf="@+id/ic_phone"
+            app:layout_constraintTop_toTopOf="@+id/ic_phone"
+            app:srcCompat="@drawable/ic_dot_dot_dot_connected" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/dot_1"
+            app:layout_constraintEnd_toStartOf="@+id/ic_dot_2"
+            app:layout_constraintStart_toEndOf="@+id/dot_1"
+            app:layout_constraintTop_toTopOf="@+id/dot_1"
+            app:srcCompat="@drawable/ic_tv_disconnected" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_dot_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_wifi"
+            app:layout_constraintEnd_toStartOf="@+id/ic_wifi"
+            app:layout_constraintStart_toEndOf="@+id/ic_tv"
+            app:layout_constraintTop_toTopOf="@+id/ic_wifi"
+            app:srcCompat="@drawable/ic_dot_dot_dot_disconnected" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ic_phone"
+            app:srcCompat="@drawable/ic_wifi_disconnected" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

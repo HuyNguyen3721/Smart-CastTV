@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "60338773011",
+    "project_id": "smarttv-cast-ez-1",
+    "storage_bucket": "smarttv-cast-ez-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60338773011:android:18287fc0664889bd0033e6",
+        "android_client_info": {
+          "package_name": "com.ezmobi.smarttvcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60338773011-gk9ue42l8lighn9i82fkunq4haj3bkcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjzFgrV0Jks56MQ4quOWtfnvvoKcHKkWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60338773011-gk9ue42l8lighn9i82fkunq4haj3bkcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60338773011:android:4f4948a3423cb02e0033e6",
+        "android_client_info": {
+          "package_name": "com.ezstudio.smarttvcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60338773011-gk9ue42l8lighn9i82fkunq4haj3bkcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjzFgrV0Jks56MQ4quOWtfnvvoKcHKkWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60338773011-gk9ue42l8lighn9i82fkunq4haj3bkcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
